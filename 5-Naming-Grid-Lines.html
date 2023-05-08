@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;
+        }
+
+    .container{  
+       background: lightpink;
+       width: 500px;
+       height: 700px;  
+       margin:  50px 50px ;
+
+       display: grid;
+       grid-template-columns: repeat(3,[col-start] 1fr [col-end]);
+       grid-template-rows:[Header-start]0px[Header-end Menu-start]60px[Menu-end box-start]100px[box-end sidebar-start] 250px[sidebar-end footer-start] 50px[footer-end];
+      
+       grid-gap:4px;
+     
+       /* grid-gap:10px */
+       /* grid-row-gap:10px;
+       grid-column-gap:5px; */
+      }
+
+      .Header{
+         background:yellowgreen; 
+        grid-row:Header-start/Header-end;
+        grid-column: col-start 1/col-end 4;        
+      }
+
+      .Menu{
+        background: lightgreen;
+        /* grid-row: 2 / span 3; */
+        grid-row:  Menu-start/Menu-end ;
+        grid-column: col-start 1/col-end -1;
+
+      }
+      
+      .box1{ 
+        background: lightblue;
+        grid-row:box-start/box-end;      
+        grid-column: 1/2;
+
+      }
+
+      .box2{
+        background: hotpink;
+        grid-column: 2/3;
+        grid-row: box-start/box-end; 
+      }
+
+      .sidebar{
+        background:royalblue;
+        grid-row: box-start/sidebar-end;
+        grid-column: 3/4;
+      }
+
+      .content{
+        background: goldenrod;
+        grid-row: sidebar-start/box-end;
+        grid-column: 1/3;
+       
+      }
+     .footer{
+      background: blue;
+       grid-row:footer-start/footer-end;
+       grid-column:1/4 ;
+     }
+
+
+</style>
+</head>
+    <body>
+         <h1>mujju_khan : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items Header">Header</div>
+            <div class="items Menu">Menu</div>
+            <div class="items box1">box1</div>
+            <div class="items box2">box2</div>
+            <div class="items sidebar">sidebar</div>
+            <div class="items content">content</div>
+            <div class="items footer">footer</div>
+            
+          </div>
+    </body>
+</html>

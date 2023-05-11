@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS-Grid</title>
+    <style>
+        body{
+          font-family: arial,helvetica;
+        }
+
+    .container{  
+       background: lightpink;
+       width: 600px;
+       height: 550px;  
+       margin:  50px 50px ;
+
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows:120px 40px 80px 300px 40px ;
+      
+       grid-gap:4px;
+
+       grid-template-areas: "header header header"
+                             "mujju mujju mujju"
+                             "Box1 box2 sidebar"
+                             "content content sidebar"
+                             "footer footer footer"   
+                            
+      } 
+
+      .Header{
+         background:yellowgreen; 
+           grid-area:header;        
+      }
+
+      .Menu{
+        background: lightgreen;
+         grid-area: mujju;
+
+
+      }
+      
+      .box1{ 
+        background: lightblue;
+        grid-area:Box1;
+      }
+
+      .box2{
+        background: hotpink;
+        grid-area: box2 ;
+      }
+
+      .sidebar{
+        background:royalblue;
+        grid-area: sidebar;
+      }
+
+      .content{
+        background: goldenrod;
+        grid-area: content ;
+      }
+     .footer{
+      background: blue;
+      grid-area:footer ;
+     }
+
+
+</style>
+</head>
+    <body>
+         <h1>mujju_khan : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items Header">Header</div>
+            <div class="items Menu">Menu</div>
+            <div class="items box1">box1</div>
+            <div class="items box2">box2</div>
+            <div class="items sidebar">sidebar</div>
+            <div class="items content">content</div>
+            <div class="items footer">footer</div>
+            
+          </div>
+    </body>
+</html>

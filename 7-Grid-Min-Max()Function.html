@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;}
+           h1{ padding: 0 0 0 40px; }
+
+    .container{  
+       background: #eee;
+       width: 80%;
+       margin: 45px auto 0;
+
+       display: grid;
+       grid-template-columns: minmax(150px,1fr) 1fr 1fr min-content;  
+       grid-template-rows: repeat(2,minmax(150px,min-content));
+        
+       grid-gap:10px
+      }
+
+      .item1{
+        background:lightslategray;
+      }
+
+      .item2{
+        background: orangered;
+      }
+      
+      .item3{ 
+        background: lightpink;
+      }
+
+      .item4{
+        background: green;
+      }
+
+      .item5{
+        background:lightgreen;
+      }
+
+      .item6{
+        background: lightcoral;
+      }
+      .item7{
+        background: gold;
+      }
+
+      .item8{
+        background:#777 ;
+      }
+</style>
+</head>
+    <body>
+         <h1>Mujju_khan_111 : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items item1">one</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Lorem ipsum dolor sit.</div>
+            <div class="items item4">four Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum et ratione molestiae quidem temporibus! Quod?</div>
+            <div class="items item5">five</div>
+            <div class="items item6">sixe Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis .</div>
+            <div class="items item7">Seven Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+            <div class="items item8">Eight</div>
+            
+        </div>
+    </body>
+</html>

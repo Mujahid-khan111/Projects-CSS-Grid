@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;}
+           h1{ padding: 0 0 0 40px; }
+
+    .container{  
+       background: lightblue;
+       width: 650px;
+       margin: 45px auto 0;
+
+       display: grid;
+       grid-template-columns: repeat(2,1fr);  
+       grid-template-rows: repeat(2,120px);
+       grid-gap:10px;
+
+       grid-auto-rows:50px;
+       grid-auto-flow: row;
+
+       /* align-items:stretch; */
+       /* justify-items:end ; */
+        
+       
+      }
+
+      .item1{
+        background:lightslategray;
+        /* align-self: start; */
+        /* justify-self: center; */
+      }
+
+      .item2{
+        background: orangered;
+      }
+      
+      .item3{ 
+        background: lightpink;
+       place-self:  start center ;
+
+      }
+
+      .item4{
+        background: green;
+      align-self:stretch;
+      }
+
+      .item5{
+        background:lightgreen;
+      }
+
+      .item6{
+        background: lightcoral;
+      }
+      .item7{
+        background: gold;
+        align-self:center;
+        justify-self: center;
+      }
+
+      .item8{
+        background:#777;
+        /* only one item ke liye  place-self: start or end or center */
+        /* place-self: start; */
+      }
+</style>
+</head>
+    <body>
+         <h1>Mujju_khan_111 : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items item1"> one   </div>
+            <div class="items item2"> Two   </div>
+            <div class="items item3"> three </div>
+            <div class="items item4"> four  </div>
+            <div class="items item5"> five  </div>
+            <div class="items item6"> sixe  </div>
+            <div class="items item7"> Seven </div>
+            <div class="items item8"> Eight </div>
+            
+        </div>
+    </body>
+</html>

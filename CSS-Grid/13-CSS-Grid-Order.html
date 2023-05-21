@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;}
+           h1{ padding: 0 0 0 40px; }
+
+    .container{  
+       background: lightblue;
+       width: 650px;
+       margin: 45px auto 0;
+
+       display: grid;
+       grid-template-columns: repeat(3,1fr);  
+       grid-template-rows: repeat(2,120px);
+       grid-gap:10px;
+
+       grid-auto-rows:50px;
+       grid-auto-flow: row;
+
+      }
+
+      .item1{
+        background:lightslategray;
+        order: 0;
+      }
+
+      .item2{
+        background: orangered;
+        order: 2;
+      }
+      
+      .item3{ 
+        background: lightpink;
+         order: 3;
+      }
+
+      .item4{
+        background: green;
+      align-self:stretch;
+      order: 4;
+      }
+
+      .item5{
+        background:lightgreen;
+        order: 5;  
+    }
+
+      .item6{
+        background: lightcoral;
+        order: 6;
+      }
+</style>
+</head>
+    <body>
+         <h1>Mujju_khan_111 : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items item1"> one   </div>
+            <div class="items item2"> Two   </div>
+            <div class="items item3"> three </div>
+            <div class="items item4"> four  </div>
+            <div class="items item5"> five  </div>
+            <div class="items item6"> sixe  </div>
+            
+        </div>
+    </body>
+</html>

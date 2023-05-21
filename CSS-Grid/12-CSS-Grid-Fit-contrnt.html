@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;}
+           h1{ padding: 0 0 0 40px; }
+
+    .container{  
+       background: lightblue;
+       width: 600px;
+       height: auto;
+       margin: 45px auto 0;
+
+       display: grid;
+        grid-template-columns:fit-content(200px) fit-content(300px)1fr;
+        grid-template-rows:repeat(2,minmax(100px,min-content));
+        /* grid-template-rows:repeat(2,100px); */
+
+        grid-auto-rows:80px ;
+      }
+ 
+      .item1{background:lightslategray;}
+
+      .item2{background: orangered;}
+      
+      .item3{background: lightpink;}
+
+      .item4{background: green;}
+
+      .item5{background:lightgreen;}
+
+      .item6{background: #7dCEAb}
+    
+      .items{color: solid black;font-size: 15px;font-weight:auto bold;padding:10px;} 
+
+
+</style>
+</head>
+    <body>
+         <h1>Mujju_khan_111 : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items item1"> one  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptatum nihil quibusdam repellat iusto accusamus repudiandae mollit</div>
+            <div class="items item2"> Two   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellat dignissimo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum expedita autem adipisci ratione vero excepturi minima quam totam aut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus alias iste voluptatum sed? Vero alias, incidunt vel dolorem iusto saepe!</div>
+            <div class="items item3"> three </div>
+            <div class="items item4"> four  </div>
+             <div class="items item5"> five  </div>
+             <div class="items item6"> sixe  </div>
+            <!-- <div class="items item7"> Seven </div> -->
+            <!-- <div class="items item8">  Eight </div> -->
+             
+        </div>
+    </body>
+</html>

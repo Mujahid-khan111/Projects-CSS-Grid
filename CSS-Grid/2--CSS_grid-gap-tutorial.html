@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS-Grid</title>
+      <style>
+        body{
+          font-family: arial,helvetica;
+        }
+
+    .container{  
+       background: #eee;
+       width: 600px;  
+       margin: 100px 0 0 50px;
+
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: 100px 100px ;
+     
+       /* grid-gap:10px */
+       /* grid-row-gap:10px;
+       grid-column-gap:5px; */
+
+       grid-gap:25px 70px
+      }
+
+      .item1{
+        background:lightslategray;
+      }
+
+      .item2{
+        background: orangered;
+      }
+      
+      .item3{ 
+        background: lightpink;
+      }
+
+      .item4{
+        background: green;
+      }
+
+      .item5{
+        background:lightgreen;
+      }
+
+      .item6{
+        background: lightcoral;
+      }
+
+</style>
+</head>
+    <body>
+         <h1>mujju_khan : CSS-grid</h1>
+        
+         <div class="container">  
+            <div class="items item1">one</div>
+            <div class="items item2">two</div>
+            <div class="items item3">three</div>
+            <div class="items item4">four</div>
+            <div class="items item5">five</div>
+            <div class="items item6">sixe</div>
+        </div>
+    </body>
+</html>
